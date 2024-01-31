@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sistema de brasileiro</title>
+</head>
+
+<body>
+  <h1>Sistema de Verificaçao Brasileiro</h1>
+  Em que pais voce mora? <input type="text" name="pais" id="pais">
+  <input type="button" value="Verificar" onclick="verificar()">
+  <div id="res"></div>
+  <script>
+    function verificar() {
+      var pais = window.document.querySelector('input#pais')
+      var res = window.document.querySelector('div#res')
+      res.innerHTML = `<p>Você é do pais ${pais.value}.</p>`
+      if (pais.value == 'Brasil', 'brasil', 'br') {
+        res.innerHTML += `<p>Você é <strong>Brasileiro</strong></p>`
+      }
+    }
+  </script>
+</body>
+
+</html>
