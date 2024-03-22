@@ -1,4 +1,13 @@
-function soma(n1 = 0, n2 = 0) {
-  return n1 + n2
+function estaEndividado(receita, gasto) {
+  if (receita > gasto) {
+    return "Esta no AZUL!!"
+  } else {
+    return "Esta no Vermelho!!"
+  }
 }
-console.log(soma(10, 10))
+
+const daniel = estaEndividado(5000, 7000)
+const gabriel = estaEndividado(10000, 3000)
+
+console.log(gabriel)
+console.log(daniel)

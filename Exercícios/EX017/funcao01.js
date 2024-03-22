@@ -1,9 +1,6 @@
-function parimpar(n) {
-  if (n % 2 == 0) {
-    return 'par!'
-  } else {
-    return 'impar!'
-  }
+function nome() {
+  let name = 'Caio'
+  console.log(name)
 }
 
-console.log(parimpar(10))
+nome()
