@@ -1,8 +1,8 @@
-const campinaGrande = 30000
+const cidade = window.prompt("Quantos habitantes tem sua cidade?")
 
-if (campinaGrande >= 30000) {
-  console.log('cidade grande')
+if (`${cidade}` >= 300) {
+  console.log("A cidade e grande")
 } else {
-   (campinaGrande < 30000)
-   console.log('cidade pequena')
+  (`${cidade}` < 300)
+  console.log("A cidade e pequena")
 }
